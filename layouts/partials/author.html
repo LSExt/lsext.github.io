@@ -1,0 +1,13 @@
+{{- if .Params.author -}}
+  {{- if reflect.IsMap .Params.author -}}
+    {{- .Params.author.name -}}
+  {{- else -}}
+    {{- .Params.author -}}
+  {{- end -}}
+{{- else if site.Params.author -}}
+  {{- if reflect.IsMap site.Params.author -}}
+    {{- site.Params.author.name -}}
+  {{- else -}}
+    {{- site.Params.author -}}
+  {{- end -}}
+{{- end -}}

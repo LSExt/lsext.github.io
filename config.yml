@@ -1,0 +1,49 @@
+baseURL: "http://192.168.1.93:1313/"
+title: "Legacy SPARC Extentions"
+theme: "hugo-PaperMod"
+
+# Simple single-language configuration
+languageCode: "en"
+defaultContentLanguage: "en"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 10
+    - name: Posts
+      url: /posts/
+      weight: 20
+    - name: Packages
+      url: /packages/
+      weight: 30
+    - name: Legacy SPARC Extensions
+      url: http://legacy.lsext.org
+      weight: 40
+
+params:
+  cover:
+     responsiveImages: false
+     linkFullImages: false
+  author:
+     name: "Luis Enrique Limon"
+  env: "production"
+  description: "A simple retro-compatible Hugo site"
+  packageBaseUrl: "http://192.168.1.193/packages"
+  # packageBaseUrl: "https://github.com/luiselimon/my-repo/releases/download/v1.0.0-sparc"
+  
+  # Retro / Fallback settings
+  defaultTheme: "light"
+  disableThemeToggle: true
+  ShowSearch: false
+  ShowShareButtons: false
+  ShowReadingTime: false
+  disableSpecial1stPost: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  ShowToc: false

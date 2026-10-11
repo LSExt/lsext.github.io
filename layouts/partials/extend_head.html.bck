@@ -1,0 +1,21 @@
+{{- /* Head custom content area start */ -}}
+{{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
+{{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
+<style type="text/css">
+  /* Force solid white canvas across vintage engines */
+  html, body, main, div, article, section, header, footer, .list, .post-entry {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  a {
+    color: #0000ee !important;
+    text-decoration: underline !important;
+  }
+
+  a:visited {
+    color: #551a8b !important;
+  }
+</style>
+{{- /* Head custom content area end */ -}}

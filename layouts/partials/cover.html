@@ -1,0 +1,23 @@
+{{- with .cxt }}
+{{- if (and .Params.cover.image (not $.isHidden)) }}
+<figure class="entry-cover">
+  {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
+  {{- $imgSrc := .Params.cover.image | relURL }}
+  {{- $width := .Params.cover.width | default "600" }}
+
+  {{- if (and site.Params.cover.linkFullImages $.IsSingle) }}
+    <a href="{{ $imgSrc }}">
+      <img src="{{ $imgSrc }}" alt="{{ $alt }}" width="{{ $width }}" border="0">
+    </a>
+  {{- else }}
+    <img src="{{ $imgSrc }}" alt="{{ $alt }}" width="{{ $width }}" border="0">
+  {{- end }}
+
+  {{- if $.IsSingle }}
+    {{ with .Params.cover.caption -}}
+      <figcaption>{{ . | markdownify }}</figcaption>
+    {{- end }}
+  {{- end }}
+</figure>
+{{- end }}
+{{- end }}

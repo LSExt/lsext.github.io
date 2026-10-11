@@ -1,0 +1,4 @@
+{{- $filename := .Get "file" -}}
+{{- $label := .Get "label" | default $filename -}}
+{{- $baseUrl := site.Params.packageBaseUrl | default "/packages" -}}
+<a href="{{ $baseUrl }}/{{ $filename }}" class="pkg-download-link">{{ $label }}</a>

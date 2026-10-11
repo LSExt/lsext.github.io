@@ -1,0 +1,34 @@
+{{- /* Head custom content area start */ -}}
+{{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
+{{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
+<style type="text/css">
+<!--
+  /* 1. Base / Netscape 4 Styling */
+  html, body, main, div, article, section, header, footer, .list, .post-entry {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Netscape link color (adjust hex code as desired) */
+  a {
+    color: #0000ee;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #551a8b;
+  }
+
+  /* 2. Modern Browsers Only (Netscape 4 ignores @media completely) */
+  @media screen {
+    .entry-header a,
+    .post-entry a,
+    .entry-title a,
+    h2 a {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+  }
+-->
+</style>
+{{- /* Head custom content area end */ -}}

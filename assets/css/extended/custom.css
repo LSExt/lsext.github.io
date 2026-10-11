@@ -1,0 +1,67 @@
+/* Custom styles added to demo */
+
+iframe {
+    border-radius: var(--radius) !important;
+}
+
+.entry-cover img {
+    border: 1px solid var(--border);
+}
+
+/* Legacy browser color overrides */
+html, body {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+h1, h2, h3, h4, p, li, article, main, header, footer {
+    color: #000000 !important;
+    background-color: transparent !important;
+}
+
+a {
+    color: #0000ee !important;
+    text-decoration: underline !important;
+}
+
+a:visited {
+    color: #551a8b !important;
+}
+
+/* Fix PaperMod Footer Overflow caused by badges and long spans */
+.footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+/* Force footer text and spans to break normally */
+.footer span,
+.footer a,
+.footer div {
+    white-space: normal !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Ensure retro badges container wraps cleanly */
+.retro-badges {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-bottom: 10px !important;
+}
+
+.retro-badges img {
+    display: block !important;
+    max-width: 88px !important;
+    height: 31px !important;
+}
