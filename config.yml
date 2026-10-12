@@ -19,7 +19,7 @@ menu:
       url: /posts/
       weight: 20
     - name: Packages
-      url: https://github.com/LSExt/lsesol/releases/download/v0.9.0-sol25-sparc/autoconf-2.69-1.lse-sunos5.5.1-sparcv7-lse.gz/
+      url: /packages/
       weight: 30
     - name: "About"
       url: "/about/"
