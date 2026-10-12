@@ -36,8 +36,9 @@ params:
      name: "Luis Enrique Limon"
   env: "production"
   description: "A simple retro-compatible Hugo site"
-  packageBaseUrl: "http://lsext.org/packages"
-  # packageBaseUrl: "https://github.com/luiselimon/my-repo/releases/download/v1.0.0-sparc"
+  #packageBaseUrl: "http://lsext.org/packages"
+  #packageSOLBaseUrl: "https://github.com/luiselimon/my-repo/releases/download/v1.0.0-sparc"
+  packageBaseUrl: "https://github.com/LSExt"
   
   # Retro / Fallback settings
   defaultTheme: "light"
