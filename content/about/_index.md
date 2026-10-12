@@ -20,6 +20,6 @@ Eventually built a farm of SPARCs in orders to use my time better as the builder
 
 For a subsequent expansion into more complex targets. AI was utilized in an interactive peer-programing model 
 
-In this role the AI functioned as a real-time syntax checker, macro resolution assistant, and preprocessor debug partner helping helping identify header conflicts and hidden SunOS/Solaris tricks.
+In this role the AI functioned as a real-time syntax checker, macro resolution assistant, and preprocessor debug partner helping identify header conflicts, hidden SunOS/Solaris tricks and changes in core technologies like C99 Posix, threads, atomics and Wide Character.
 
 All architectural decisions, platform verification, final code integrations, and physical execution on vintage hardware remain either human created or human-guided and independently verified.
