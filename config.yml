@@ -10,6 +10,29 @@ outputs:
   home:
     - HTML
     - RSS
+    - JSONLD
+  page:
+    - HTML
+    - JSONLD
+  section:
+    - HTML
+    - JSONLD
+
+mediaTypes:
+  text/html:
+    suffixes:
+      - html
+      - htm
+
+outputFormats:
+  HTML:
+    mediaType: text/html
+    isPlainText: false
+  JSONLD:
+    mediaType: "application/json"
+    baseName: "schema"
+    isPlainText: true
+
 menu:
   main:
     - name: Home

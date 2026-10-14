@@ -93,6 +93,7 @@
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
+<hr class="content-divider" />
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}

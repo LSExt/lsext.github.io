@@ -72,7 +72,18 @@
                 {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
                     {{ site.Params.label.iconSVG | safeHTML }}
                 {{- end -}}
-                {{- $label_text -}}
+<table border="0" cellpadding="8" cellspacing="0" width="100%" bgcolor="#1e4174" class="retro-header">
+  <tr>
+    <td align="left" valign="middle">
+      <font color="#ffffff" size="+1">
+        <b><a href="{{ "/" | relLangURL }}" style="color: #ffffff; text-decoration: none;">
+                <font color="#ffffff"><b>{{- $label_text -}}</b></font>
+
+        </a></b>
+      </font>
+    </td>
+  </tr>
+</table>
             </b></font>
 
             {{- $label_text := (site.Params.label.text | default site.Title) }}

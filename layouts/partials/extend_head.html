@@ -4,8 +4,8 @@
 <style type="text/css">
 <!--
   /* 1. Base / Netscape 4 Styling */
-  html, body, main, div, article, section, header, footer, .list, .post-entry {
-    background-color: #ffffff !important;
+  html, body, main, div, article, section, footer, .list, .post-entry {
+    background-color: #ffffff !important; 
     background: #ffffff !important;
     color: #000000 !important;
   }
@@ -29,6 +29,13 @@
       text-decoration: none !important;
     }
   }
+
+  /* Target header elements specifically without affecting main page tables */
+  .retro-header, .retro-header td, .retro-header tr, .logo, .logo a {
+    background-color: #1e4174 !important;
+    background: #1e4174 !important;
+   }
+
 -->
 </style>
 {{- /* Head custom content area end */ -}}

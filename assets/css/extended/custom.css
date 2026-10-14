@@ -1,67 +1,40 @@
-/* Custom styles added to demo */
-
-iframe {
-    border-radius: var(--radius) !important;
+/* Top Nav Bar Background & Border */
+.nav {
+    background-color: #1e4174 !important; /* Classic Sun Dark Blue */
+    border-bottom: 2px solid #002244;
 }
 
-.entry-cover img {
-    border: 1px solid var(--border);
+/* Fix Title / Logo Background & Spacing */
+.logo, 
+.logo a {
+    background: transparent !important;
+    color: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
 }
 
-/* Legacy browser color overrides */
-html, body {
-    background: #ffffff !important;
-    background-color: #ffffff !important;
-    color: #000000 !important;
+/* Navigation Links Styling */
+.nav #menu a {
+    color: #ffffff !important;
+    background: transparent !important;
 }
 
-h1, h2, h3, h4, p, li, article, main, header, footer {
-    color: #000000 !important;
-    background-color: transparent !important;
+.nav #menu a:hover, 
+.logo a:hover {
+    color: #e0e0e0 !important;
+    text-decoration: underline;
 }
 
-a {
-    color: #0000ee !important;
-    text-decoration: underline !important;
+/* Active Page Indicator in Menu */
+.nav #menu .active {
+    border-bottom: 2px solid #ffffff !important;
 }
 
-a:visited {
-    color: #551a8b !important;
-}
-
-/* Fix PaperMod Footer Overflow caused by badges and long spans */
-.footer {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    overflow: hidden !important;
-}
-
-/* Force footer text and spans to break normally */
-.footer span,
-.footer a,
-.footer div {
-    white-space: normal !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-/* Ensure retro badges container wraps cleanly */
-.retro-badges {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 8px !important;
-    margin-bottom: 10px !important;
-}
-
-.retro-badges img {
-    display: block !important;
-    max-width: 88px !important;
-    height: 31px !important;
+/* Horizontal Content Dividers */
+.content-divider {
+    border: 0;
+    height: 1px;
+    background-color: #e1e4e8;
+    margin: 2rem 0;
 }
