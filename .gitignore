@@ -7,6 +7,10 @@
 _obj
 _test
 
+# Binaries
+*.tar*
+
+
 # Architecture specific extensions/prefixes
 *.[568vq]
 [568vq].out
@@ -26,3 +30,4 @@ _testmain.go
 .DS_Store
 .hugo_build.lock
 resources/_gen/
+content/public
