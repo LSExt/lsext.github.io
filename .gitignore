@@ -10,6 +10,11 @@ _test
 # Binaries
 *.tar*
 
+# Hugo 
+/public/
+/resources/_gen/
+.hugo_build.lock
+
 
 # Architecture specific extensions/prefixes
 *.[568vq]
