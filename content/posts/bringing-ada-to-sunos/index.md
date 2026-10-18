@@ -67,6 +67,27 @@ to build the tool for SunOS (`a.out`).
 
 This went on for some time. I even created a script to find and blast out bad objects.
 
+```bash
+for obj in *.o; do
+  [ -f "$obj" ] || continue
+  # Check if object is NOT SPARC architecture
+  file "$obj"
+  if  file "$obj" | ggrep  "ELF" >/dev/null 2>&1; then
+    echo "=== Recompiling non-SPARC object: $obj ==="
+    base="${obj%.o}"
+
+    # Check for Ada source file (.adb) or C source file (.c)
+    if [ -f "${base}.adb" ]; then
+      ../xgcc -B../ -c -g -O2 -gnatg -gnatp -gnatws -I. -Irts -I.. -I../config "${base}.adb" -o "$obj"
+    elif [ -f "${base}.c" ]; then
+      ../xgcc -B../ -c -g -O2 -I. -I.. -I../config "${base}.c" -o "$obj"
+    elif [ -f "a-${base}.c" ]; then
+      ../xgcc -B../ -c -g -O2 -I. -I.. -I../config "a-${base}.c" -o "$obj"
+    fi
+  fi
+done
+```
+
 Because a `make all` or something like that did not work for me during cross-compiling, I did
 it the try, fail, and fix way.
 
