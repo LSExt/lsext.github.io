@@ -38,3 +38,9 @@
     background-color: #e1e4e8;
     margin: 2rem 0;
 }
+
+img[src$='#center'] {
+    display: block;
+    margin: 0.7rem auto;
+}
+
